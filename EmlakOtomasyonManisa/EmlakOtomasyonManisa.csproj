@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09A58879-A75F-4C85-AFE8-3665BE750F66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmlakOtomasyonManisa</RootNamespace>
+    <AssemblyName>EmlakOtomasyonManisa</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1487720410_go-home.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v16.2.Core, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cariler.cs">
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="emlakTipiTablo.cs">
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityEmlakOtomasyonManisaDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityEmlakOtomasyonManisaDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityEmlakOtomasyonManisaDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="evler.cs">
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs">
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifremiUnuttum.Designer.cs">
+      <DependentUpon>sifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="users.cs">
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="YetkiliAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YetkiliAyarlar.Designer.cs">
+      <DependentUpon>YetkiliAyarlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cariEkleDüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cariEkleDüzenle.Designer.cs">
+      <DependentUpon>cariEkleDüzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carileriGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carileriGoruntule.Designer.cs">
+      <DependentUpon>carileriGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContainerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContainerForm.Designer.cs">
+      <DependentUpon>ContainerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="evEkleDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="evEkleDuzenle.Designer.cs">
+      <DependentUpon>evEkleDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EvleriGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EvleriGoruntule.Designer.cs">
+      <DependentUpon>EvleriGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniOkuYaz.cs" />
+    <Compile Include="KullaniciGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGoruntule.Designer.cs">
+      <DependentUpon>KullaniciGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciEkleDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciEkleDuzenle.Designer.cs">
+      <DependentUpon>KullaniciEkleDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="resmiGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resmiGoster.Designer.cs">
+      <DependentUpon>resmiGoster.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="sifremiUnuttum.resx">
+      <DependentUpon>sifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YetkiliAyarlar.resx">
+      <DependentUpon>YetkiliAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cariEkleDüzenle.resx">
+      <DependentUpon>cariEkleDüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carileriGoruntule.resx">
+      <DependentUpon>carileriGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContainerForm.resx">
+      <DependentUpon>ContainerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="evEkleDuzenle.resx">
+      <DependentUpon>evEkleDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EvleriGoruntule.resx">
+      <DependentUpon>EvleriGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGoruntule.resx">
+      <DependentUpon>KullaniciGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciEkleDuzenle.resx">
+      <DependentUpon>KullaniciEkleDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resmiGoster.resx">
+      <DependentUpon>resmiGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="EntityEmlakOtomasyonManisaDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EntityEmlakOtomasyonManisaDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EntityEmlakOtomasyonManisaDB.edmx.diagram">
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1487724785_home_house_loan_coin_currency_euro_money_price_finance_financial.ico" />
+    <None Include="Resources\1487724524_eye.ico" />
+    <None Include="Resources\1487724073_Customer_Male_Light.ico" />
+    <None Include="Resources\1487721118_Untitled-2-02.ico" />
+    <None Include="Resources\1487721046_building.ico" />
+    <None Include="Resources\1487720633_home.ico" />
+    <None Include="Resources\1487720632_plus_add_green.ico" />
+    <None Include="Resources\1487720410_go-home.ico" />
+    <None Include="Resources\8633358251.png" />
+    <None Include="Resources\1487716589_Log Out.ico" />
+    <None Include="Resources\1487716468_application-pgp-signature.ico" />
+    <None Include="Resources\863335825.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\1490190926_f-cross_2561.png" />
+    <None Include="Resources\1490190926_f-cross_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1487720410_go-home.ico" />
+    <Content Include="EntityEmlakOtomasyonManisaDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.edmx</DependentUpon>
+      <LastGenOutput>EntityEmlakOtomasyonManisaDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EntityEmlakOtomasyonManisaDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EntityEmlakOtomasyonManisaDB.edmx</DependentUpon>
+      <LastGenOutput>EntityEmlakOtomasyonManisaDB.cs</LastGenOutput>
+    </Content>
+    <None Include="Resources\kahramanemlak.png" />
+    <None Include="Resources\user-silhouette-icon.png" />
+    <None Include="Resources\Actions-unlock-icon.png" />
+    <None Include="Resources\Actions-session-exit-icon.png" />
+    <None Include="Resources\girisButonu.png" />
+    <None Include="Resources\1457253137_custom-reports.ico" />
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-6-Logout.ico" />
+    <None Include="Resources\1491005267_icon-21-eye-hidden.png" />
+    <None Include="Resources\1491005284_icon-22-eye.png" />
+    <None Include="Resources\1491001978_Ago_arrow_arrow_left_back_previous_direction_left.png" />
+    <None Include="Resources\soru-isareti.jpg" />
+    <None Include="Resources\1491001640_Mail.png" />
+    <None Include="Resources\1491001534_Arrow_Left.png" />
+    <None Include="Resources\1491000985_find.png" />
+    <None Include="Resources\1490920723_arrow-return-270.ico" />
+    <None Include="Resources\1490920668_Revert.png" />
+    <None Include="Resources\1490920625_Revert.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

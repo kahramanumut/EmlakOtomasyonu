@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="813ba988165041c9856607144732ce6b" Name="Diagram1">
+        <EntityTypeShape EntityType="EmlakOtomasyonuManisaDBModel.cariler" Width="1.5" PointX="0.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakOtomasyonuManisaDBModel.evler" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakOtomasyonuManisaDBModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EmlakOtomasyonuManisaDBModel.users" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <AssociationConnector Association="EmlakOtomasyonuManisaDBModel.FK_evler_cariler" ManuallyRouted="false" />
+        <AssociationConnector Association="EmlakOtomasyonuManisaDBModel.FK_evler_cariler1" />
+        <EntityTypeShape EntityType="EmlakOtomasyonuManisaDBModel.settings" Width="1.5" PointX="5.375" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
